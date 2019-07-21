@@ -19,6 +19,7 @@ public class ArrayValues1 {
 			sum=sum+a[i];
 		}
 		System.out.println(sum);
+		System.out.println("Hello");
 
 	}
 
