@@ -12,7 +12,15 @@ public class AssignmentLocators {
 		driver.get("https://www.google.com/");
 		
 		driver.findElement(By.linkText("Gmail")).click();
-		driver.findElement(By.linkText("Create account")).click();
+		driver.findElement(By.linkText("Create an account")).click();
+		driver.switchTo().window(arg0)
+		driver.findElement(By.xpath("//*[@id=\'firstName\']")).sendKeys("Selenium");
+		driver.findElement(By.name("lastName")).sendKeys("NewBatch");
+		driver.findElement(By.id("username")).sendKeys("seleniumnewbatch");
+		driver.findElement(By.name("Passwd")).sendKeys("Sairam456");
+		driver.findElement(By.className("ConfirmPasswd")).sendKeys("Sairam456");
+		driver.findElement(By.linkText("Next")).click();
+		
 		
 	}
 

@@ -16,10 +16,10 @@ public class LocatorsDemo {
 		 ---->not recommended for absolute x-path------*/
 		
 		
-//		driver.findElement(By.xpath("//*[@id='firstname']")).sendKeys("Vijji");
-//		driver.findElement(By.xpath("//*[@id='lastname']")).sendKeys("Nakka");
-//		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("vijji.tester1@gmail.com");
-//		driver.findElement(By.xpath("//*[@id=\'PASSWORD\']")).sendKeys("Sairam@456");
+		driver.findElement(By.xpath("//*[@id='firstname']")).sendKeys("Vijji");
+		driver.findElement(By.xpath("//*[@id='lastname']")).sendKeys("Nakka");
+		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("vijji.tester1@gmail.com");
+		driver.findElement(By.xpath("//*[@id=\'PASSWORD\']")).sendKeys("Sairam@456");
 		
 		
 		//2.id.......1st Priority
@@ -44,7 +44,7 @@ public class LocatorsDemo {
 		//driver.findElement(By.partialLinkText("business accoun")).click();
 		
 		//7.CSSselector----2nd Priority
-		driver.findElement(By.cssSelector("#firstname")).sendKeys("Vijji");
+		//driver.findElement(By.cssSelector("#firstname")).sendKeys("Vijji");
 
 }
 }
