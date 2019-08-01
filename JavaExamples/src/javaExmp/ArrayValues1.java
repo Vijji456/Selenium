@@ -6,21 +6,16 @@ public class ArrayValues1 {
 
 	public static void main(String[] args) {
 		int asize;
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Entert the size of the array");
-		asize=sc.nextInt();
-		System.out.println("Enter the values into array");
-		int a[]=new int[asize];
-		int sum=0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the size of array");
+		asize=s.nextInt();
+		System.out.println("Enter the elements into array");
+		int array[]=new int[asize];
 		
-		for(int i=0;i<asize;i++)
-		{
-			a[i]=sc.nextInt();
-			sum=sum+a[i];
+		for(int i=0;i<asize;i++) {
+			array[i]=s.nextInt();
 		}
-		System.out.println(sum);
-		System.out.println("Hello world");
-
+		System.out.println("The array is:"+array[4]);
 	}
 
 }
