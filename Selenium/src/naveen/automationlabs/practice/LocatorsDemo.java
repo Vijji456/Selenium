@@ -37,8 +37,14 @@ public class LocatorsDemo {
 		
 		//driver.findElement(By.className("float-label fv-w width100 textbox fv-tw")).sendKeys("Vijji");
 		
-		//5.linkText----only for links 1st priority
-		driver.findElement(By.linkText("Sign in")).click();
+		//5.linkText----only for links -1st priority
+		//driver.findElement(By.linkText("Sign in")).click();
+		
+		//6.PartialLinktext------not recommended
+		//driver.findElement(By.partialLinkText("business accoun")).click();
+		
+		//7.CSSselector----2nd Priority
+		driver.findElement(By.cssSelector("#firstname")).sendKeys("Vijji");
 
 }
 }
