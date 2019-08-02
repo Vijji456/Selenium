@@ -28,6 +28,14 @@ public class AlertPopUpHandle {
 		 
 		 alert.accept();// to click on ok button
 		 //alert.dismiss();// to click on cancle button
+		 
+		 driver.findElement(By.id("login1")).sendKeys("Vijji");
+		 driver.findElement(By.name("proceed")).click();
+		 Thread.sleep(5000);
+		 Alert alert1=driver.switchTo().alert();
+		 String text1=alert1.getText();
+		 System.out.println(text1);
+		 alert1.accept();
 	}
 
 }
