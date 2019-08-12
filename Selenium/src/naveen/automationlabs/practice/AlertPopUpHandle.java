@@ -6,6 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class AlertPopUpHandle {
+	
+	//Types of Popups
+	//1.Alert pop up-----Javasript Pop Up-----alert API(accept,dismiss)
+	//2. FileUpload Pupup---- type='file' and sendKeys(path)
+	//3. Window pop up or advertisement pop ups	(windowHandler api getWindowHandles())
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\IBM_ADMIN\\Desktop\\Selenium\\Drivers\\geckodriver-v0.24.0-win64\\geckodriver.exe");
@@ -36,6 +41,7 @@ public class AlertPopUpHandle {
 		 String text1=alert1.getText();
 		 System.out.println(text1);
 		 alert1.accept();
+		 
 	}
 
 }

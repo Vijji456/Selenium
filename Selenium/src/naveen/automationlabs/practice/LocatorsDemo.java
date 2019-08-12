@@ -33,7 +33,7 @@ public class LocatorsDemo {
 //		driver.findElement(By.name("firstname")).sendKeys("Vijji");
 //		driver.findElement(By.name("lastname")).sendKeys("Lakshmi");
 		
-		//4.className------not recommended becz many webelements haveing the same class name
+		//4.className------not recommended becz many webelements having the same class name
 		
 		//driver.findElement(By.className("float-label fv-w width100 textbox fv-tw")).sendKeys("Vijji");
 		
