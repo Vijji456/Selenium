@@ -19,7 +19,6 @@ public class BaseTest {
 		dataload.load(fis);
 		System.out.println("Data file got loaded");
 		
-		
 			}
 	
 	public static void launch(String browser) {
