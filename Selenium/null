@@ -1,14 +1,202 @@
-1565413962248	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IBM_AD~1\\AppData\\Local\\Temp\\rust_mozprofile.XNjPgf7tFEFk"
-1565413967130	Marionette	INFO	Listening on port 65431
-1565413967361	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://www.hdfc.com/sites/default/files/js/js_kmzijltvkKI-49ac4wLP9bgOD20Ocj_2Htdk5E90bHE.js, line 2099: ReferenceError: google is not defined
-[Parent 10896, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
-[Child 7112, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 7112, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 4544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 4544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Parent 10896, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[1565664999.320][INFO]: Starting ChromeDriver 75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155})
+[1565664999.321][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1565665000.130][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1565665000.139][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1565665000.143][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1565665000.158][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir15600_23894\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir15600_31052" data:,
+[1565665001.809][WARNING]: This version of ChromeDriver has not been tested with Chrome version 76.
+[1565665001.862][INFO]: resolved localhost to ["127.0.0.1"]
+[1565665002.037][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "76.0.3809.100",
+      "chrome": {
+         "chromedriverVersion": "75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155})",
+         "userDataDir": "C:\\Users\\IBM_AD~1\\AppData\\Local\\Temp\\scoped_dir15600_31052"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:49595"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows nt",
+      "proxy": {
 
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify"
+   },
+   "sessionId": "c42dea7baf095585cd503b8f8d6dde1a"
+}
+[1565665002.140][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND MaximizeWindow {
 
+}
+[1565665002.140][INFO]: Waiting for pending navigations...
+[1565665002.141][INFO]: Done waiting for pending navigations. Status: ok
+[1565665002.143][INFO]: resolved localhost to ["127.0.0.1"]
+[1565665002.597][INFO]: Waiting for pending navigations...
+[1565665002.600][INFO]: Done waiting for pending navigations. Status: ok
+[1565665002.600][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE MaximizeWindow {
+   "height": 708,
+   "width": 1296,
+   "x": -8,
+   "y": -8
+}
+[1565665002.605][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND Navigate {
+   "url": "https://www.amazon.com/"
+}
+[1565665002.605][INFO]: Waiting for pending navigations...
+[1565665002.606][INFO]: Done waiting for pending navigations. Status: ok
+[1565665004.617][INFO]: Waiting for pending navigations...
+[1565665100.580][INFO]: Done waiting for pending navigations. Status: ok
+[1565665100.580][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE Navigate
+[1565665100.602][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#searchDropdownBox"
+}
+[1565665100.602][INFO]: Waiting for pending navigations...
+[1565665100.679][INFO]: Done waiting for pending navigations. Status: ok
+[1565665100.724][INFO]: Waiting for pending navigations...
+[1565665100.777][INFO]: Done waiting for pending navigations. Status: ok
+[1565665100.777][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "4671dec4-3618-4330-98ec-66b8c688ad65"
+}
+[1565665100.792][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND TypeElement {
+   "id": "4671dec4-3618-4330-98ec-66b8c688ad65",
+   "text": "Books",
+   "value": [ "B", "o", "o", "k", "s" ]
+}
+[1565665100.792][INFO]: Waiting for pending navigations...
+[1565665100.835][INFO]: Done waiting for pending navigations. Status: ok
+[1565665101.042][INFO]: Waiting for pending navigations...
+[1565665102.785][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.785][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE TypeElement
+[1565665102.790][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND FindElement {
+   "using": "css selector",
+   "value": "*[name='field-keywords']"
+}
+[1565665102.790][INFO]: Waiting for pending navigations...
+[1565665102.791][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.803][INFO]: Waiting for pending navigations...
+[1565665102.804][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.804][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0c67d6f7-5f62-4d45-a34e-35c4aa4e2758"
+}
+[1565665102.810][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND TypeElement {
+   "id": "0c67d6f7-5f62-4d45-a34e-35c4aa4e2758",
+   "text": "Harrypotter",
+   "value": [ "H", "a", "r", "r", "y", "p", "o", "t", "t", "e", "r" ]
+}
+[1565665102.810][INFO]: Waiting for pending navigations...
+[1565665102.811][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.939][INFO]: Waiting for pending navigations...
+[1565665102.940][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.940][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE TypeElement
+[1565665102.945][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@type='submit']"
+}
+[1565665102.945][INFO]: Waiting for pending navigations...
+[1565665102.946][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.964][INFO]: Waiting for pending navigations...
+[1565665102.965][INFO]: Done waiting for pending navigations. Status: ok
+[1565665102.965][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "9c400157-3bf3-4051-a832-2cba2b51c4c7"
+}
+[1565665102.972][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND ClickElement {
+   "id": "9c400157-3bf3-4051-a832-2cba2b51c4c7"
+}
+[1565665102.973][INFO]: Waiting for pending navigations...
+[1565665102.973][INFO]: Done waiting for pending navigations. Status: ok
+[1565665103.112][INFO]: Waiting for pending navigations...
+[1565665174.460][INFO]: Done waiting for pending navigations. Status: ok
+[1565665174.460][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE ClickElement
+[1565665177.485][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] COMMAND Quit {
+
+}
+[1565665177.626][INFO]: [c42dea7baf095585cd503b8f8d6dde1a] RESPONSE Quit
