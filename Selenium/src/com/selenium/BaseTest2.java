@@ -3,6 +3,7 @@ package com.selenium;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +18,8 @@ public static WebDriver driver;
 
 public static String amazonorpath=System.getProperty("user.dir")+"//amazonor.properties";
 public static Properties amazonorload=null;
+
+public static String log4jpath=System.getProperty("user.dir")+"//log4j.properties";
 public static void init() throws Exception
 {
 	FileInputStream fis=new FileInputStream(datapath);
@@ -29,6 +32,9 @@ public static void init() throws Exception
 	amazonorload=new Properties();
 	amazonorload.load(fis1);
 	System.out.println("Amazon Properties file is loaded......");
+	
+	FileInputStream fis2=new FileInputStream(log4jpath);
+	PropertyConfigurator.configure(fis2);
 }
 public static void navigate(String url) {
 	driver.get(dataload.getProperty(url));

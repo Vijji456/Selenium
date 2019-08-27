@@ -30,6 +30,7 @@ public static void launch(String browser) {
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, System.getProperty("user.dir")+"//drivers//chromedriver.exe");
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disable-notification");
+		options.addArguments("--start-maximized");
 		driver=new ChromeDriver(options);
 	}
 	else if(flipProp.get(browser).equals("firefox")) {
