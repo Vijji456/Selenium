@@ -11,14 +11,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 
 public class BaseTest3 {
-	public static String datapath=System.getProperty("user.dir")+"//data.properties";
+	public static String projectpath=System.getProperty("user.dir");
+	public static String datapath=projectpath+"//data.properties";
 	public static Properties dataload;
-	public static String amazonorpath=System.getProperty("user.dir")+"//amazonor.properties";
+	public static String amazonorpath=projectpath+"//amazonor.properties";
 	public static Properties amazonorload;
-	public static String log4jpath=System.getProperty("user.dir")+"//log4j.properties";
+	public static String log4jpath=projectpath+"//log4j.properties";
 	public static WebDriver driver;
+	
+	//Extent report intilizer
+	public static ExtentReports report=ExtentManager.getInstance();
+	public static ExtentTest test;
 	
 	public static void init() throws Exception {
 		FileInputStream fis=new FileInputStream(datapath);

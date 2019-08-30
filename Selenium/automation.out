@@ -31,3 +31,9 @@ Navgated to the url:       https://www.amazon.com/
 the configiration file got loaded..................
 The browser is launched:   chrome
 Navgated to the url:       https://www.amazon.com/
+The Properties files got loaded
+launching the browser:   chrome
+Navigated to the URL:    https://www.amazon.com/
+Selected the drop down books by using the locator:  searchDropdownBox
+Searched for the Harrypotter using the locator:  field-keywords
+clicked on search button using the loacator:  //input[@type='submit']

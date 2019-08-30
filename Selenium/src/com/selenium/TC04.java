@@ -1,28 +1,33 @@
 package com.selenium;
 
-import org.apache.log4j.Logger;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 public class TC04 extends BaseTest3{
-	private static final Logger log=Logger.getLogger(TC04.class.getName());
-
+	
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
+		test=report.startTest("TC04");		
+				
 		init();
-		log.info("the configiration file got loaded..................");
+		test.log(LogStatus.INFO, "the configiration file got loaded..................");
+		
 		launch("chromebrowser");
-		log.info("The browser is launched:   "+dataload.getProperty("chromebrowser"));
+		test.log(LogStatus.INFO, "The browser is launched: "+dataload.getProperty("chromebrowser"));
+		
 		navigate("amazonurl");
-		log.info("Navgated to the url:       "+dataload.getProperty("amazonurl"));
-		
-		
+		test.log(LogStatus.INFO, "Navgated to the url:       "+dataload.getProperty("amazonurl"));
+				
 		selectDropDown("amzondropdown_id","Books");
-		log.info("Selected the drop down books by using the locator:  "+amazonorload.getProperty("amzondropdown_id"));
+		test.log(LogStatus.INFO, "Selected the drop down books by using the locator:  "+amazonorload.getProperty("amzondropdown_id"));
+		
 		typeText("amazonTextBox_name","HarryPotter");
-		log.info("Searched for the Harrypotter using the locator:  "+amazonorload.getProperty("amazonTextBox_name"));
+		test.log(LogStatus.INFO, "Searched for the Harrypotter using the locator:  "+amazonorload.getProperty("amazonTextBox_name"));
+		
 		clcikSearchButton("amazonsearchbutton_xpath");
-		log.info("clicked on search button using the loacator:  "+amazonorload.getProperty("amazonsearchbutton_xpath"));
+		test.log(LogStatus.INFO, "clicked on search button using the locator:  "+amazonorload.getProperty("amazonsearchbutton_xpath"));
 		
-		
+		report.endTest(test);
+		report.flush();
 
 	}
 
