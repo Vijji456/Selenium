@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+      <class name="com.mavenproject.SampleMavenProj.TestNgsample1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="beforeSuite" is-config="true" duration-ms="20" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:1, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="f" duration-ms="10" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="b()[pri:2, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="b" duration-ms="2" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.mavenproject.SampleMavenProj.TestNgsample1@5034c75a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-08-26T14:27:38Z" finished-at="2019-08-26T14:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.mavenproject.SampleMavenProj.TestNgsample1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
