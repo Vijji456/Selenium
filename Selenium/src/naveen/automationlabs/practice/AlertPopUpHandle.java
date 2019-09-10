@@ -13,7 +13,7 @@ public class AlertPopUpHandle {
 	//3. Window pop up or advertisement pop ups	(windowHandler api getWindowHandles())
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\IBM_ADMIN\\Desktop\\Selenium\\Drivers\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\VIJAYALAKSHMINAKKA\\Desktop\\Selenium\\Drivers\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		driver.findElement(By.name("proceed")).click();

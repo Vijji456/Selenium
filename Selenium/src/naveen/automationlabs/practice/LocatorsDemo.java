@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatorsDemo {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\IBM_ADMIN\\Desktop\\Selenium\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\VIJAYALAKSHMINAKKA\\Desktop\\Selenium\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fwww.ebay.com%2F");
 		

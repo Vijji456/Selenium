@@ -7,7 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class UploadFilePopUp {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.gecko.driver", "C:\\\\Users\\\\IBM_ADMIN\\\\Desktop\\\\Selenium\\\\Drivers\\\\geckodriver-v0.24.0-win64\\\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "C:\\\\Users\\\\IBM_ADMIN\\\\Desktop\\\\Selenium\\\\Drivers\\\\geckodriver-v0.24.0-win64\\\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://html.com/input-type-file/");
 		

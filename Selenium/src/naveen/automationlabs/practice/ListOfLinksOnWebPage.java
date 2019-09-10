@@ -10,8 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ListOfLinksOnWebPage {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\IBM_ADMIN\\Desktop\\Selenium\\Drivers\\chromedriver_win32\\chromedriver.exe");
-	WebDriver driver=new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\VIJAYALAKSHMINAKKA\\Desktop\\Selenium\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
 	driver.get("https://www.facebook.com/");
