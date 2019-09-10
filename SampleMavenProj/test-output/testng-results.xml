@@ -1,21 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25011" started-at="2019-09-09T04:45:08Z" finished-at="2019-09-09T04:45:33Z">
+  <suite name="SanitySuite" duration-ms="138572" started-at="2019-09-10T04:29:50Z" finished-at="2019-09-10T04:32:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25011" started-at="2019-09-09T04:45:08Z" finished-at="2019-09-09T04:45:33Z">
-      <class name="com.mavenproject.SampleMavenProj.PageObjectModel.PageObjectClassExmp">
-        <test-method status="PASS" signature="satrtProcess()[pri:0, instance:com.mavenproject.SampleMavenProj.PageObjectModel.PageObjectClassExmp@2c039ac6]" name="satrtProcess" is-config="true" duration-ms="13529" started-at="2019-09-09T04:45:08Z" finished-at="2019-09-09T04:45:22Z">
+    <test name="SanityTest" duration-ms="138572" started-at="2019-09-10T04:29:50Z" finished-at="2019-09-10T04:32:08Z">
+      <class name="com.mavenproject.SampleMavenProj.AmzonUsingTestNg">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.mavenproject.SampleMavenProj.AmzonUsingTestNg@5bb21b69]" name="startProcess" is-config="true" duration-ms="38420" started-at="2019-09-10T04:29:50Z" finished-at="2019-09-10T04:30:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- satrtProcess -->
-        <test-method status="PASS" signature="Registraion()[pri:0, instance:com.mavenproject.SampleMavenProj.PageObjectModel.PageObjectClassExmp@2c039ac6]" name="Registraion" duration-ms="11441" started-at="2019-09-09T04:45:22Z" finished-at="2019-09-09T04:45:33Z">
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.mavenproject.SampleMavenProj.AmzonUsingTestNg@5bb21b69]" name="amazon" duration-ms="4313" started-at="2019-09-10T04:30:28Z" finished-at="2019-09-10T04:30:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Registraion -->
-      </class> <!-- com.mavenproject.SampleMavenProj.PageObjectModel.PageObjectClassExmp -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.mavenproject.SampleMavenProj.AmzonUsingTestNg@5bb21b69]" name="endProcess" is-config="true" duration-ms="2499" started-at="2019-09-10T04:30:32Z" finished-at="2019-09-10T04:30:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.mavenproject.SampleMavenProj.AmzonUsingTestNg -->
+      <class name="com.mavenproject.SampleMavenProj.RadioButton">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.RadioButton@687080dc]" name="beforeMethod" is-config="true" duration-ms="12868" started-at="2019-09-10T04:31:51Z" finished-at="2019-09-10T04:32:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="radioButtonTest()[pri:0, instance:com.mavenproject.SampleMavenProj.RadioButton@687080dc]" name="radioButtonTest" duration-ms="3123" started-at="2019-09-10T04:32:04Z" finished-at="2019-09-10T04:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioButtonTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.RadioButton@687080dc]" name="afterMethod" is-config="true" duration-ms="950" started-at="2019-09-10T04:32:07Z" finished-at="2019-09-10T04:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.mavenproject.SampleMavenProj.RadioButton -->
+      <class name="com.mavenproject.SampleMavenProj.linktext">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.linktext@38bc8ab5]" name="beforeMethod" is-config="true" duration-ms="52943" started-at="2019-09-10T04:30:56Z" finished-at="2019-09-10T04:31:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="linktexttest()[pri:0, instance:com.mavenproject.SampleMavenProj.linktext@38bc8ab5]" name="linktexttest" duration-ms="1114" started-at="2019-09-10T04:31:49Z" finished-at="2019-09-10T04:31:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linktexttest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.linktext@38bc8ab5]" name="afterMethod" is-config="true" duration-ms="840" started-at="2019-09-10T04:31:50Z" finished-at="2019-09-10T04:31:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.mavenproject.SampleMavenProj.linktext -->
+      <class name="com.mavenproject.SampleMavenProj.CheckBox">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.CheckBox@6b9651f3]" name="beforeMethod" is-config="true" duration-ms="15613" started-at="2019-09-10T04:30:35Z" finished-at="2019-09-10T04:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkBoxTest()[pri:0, instance:com.mavenproject.SampleMavenProj.CheckBox@6b9651f3]" name="checkBoxTest" duration-ms="4912" started-at="2019-09-10T04:30:50Z" finished-at="2019-09-10T04:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mavenproject.SampleMavenProj.CheckBox@6b9651f3]" name="afterMethod" is-config="true" duration-ms="932" started-at="2019-09-10T04:30:55Z" finished-at="2019-09-10T04:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.mavenproject.SampleMavenProj.CheckBox -->
+    </test> <!-- SanityTest -->
+  </suite> <!-- SanitySuite -->
 </testng-results>
