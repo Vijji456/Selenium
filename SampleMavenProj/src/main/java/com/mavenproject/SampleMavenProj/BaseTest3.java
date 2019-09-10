@@ -2,6 +2,8 @@ package com.mavenproject.SampleMavenProj;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -65,6 +67,7 @@ public class BaseTest3 {
 	}
 	public static void navigate(String url) {
 		driver.get(dataload.getProperty(url));
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 	
 	public static WebElement getElement(String LocatorKey) {
@@ -102,6 +105,16 @@ public class BaseTest3 {
 	}
 	public static void clcikSearchButton(String LocatorKey) {
 		getElement(LocatorKey).click();
+	}
+	
+	public int randomNumber() {
+		Random r=new Random();
+		int ranNum=r.nextInt(99999);
+		return ranNum;
+	}
+	
+	public void closeBrowser() {
+		driver.quit();
 	}
 
 }

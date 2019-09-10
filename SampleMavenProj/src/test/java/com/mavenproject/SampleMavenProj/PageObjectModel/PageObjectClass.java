@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PageObjectClass {
+import com.mavenproject.SampleMavenProj.BaseTest3;
+
+public class PageObjectClass extends BaseTest3{
 
 	@FindBy(linkText="Sign in")WebElement SignIn;
 	@FindBy(id="email_create")WebElement emailCreate;
@@ -32,9 +34,11 @@ public class PageObjectClass {
 	public void customerRegistration() throws InterruptedException
 	{
 		SignIn.click();
-		emailCreate.sendKeys("qatest12344@gmail.com");
+		//emailCreate.sendKeys("qatest12344@gmail.com");
+		emailCreate.sendKeys(dataload.getProperty("firstname")+dataload.getProperty("lastname")+randomNumber()+dataload.getProperty("domain"));
+		System.out.println(emailCreate.getAttribute("value"));
 		Submit.click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		Mr.click();
 		firstName.sendKeys("qatestIBM");
 		lastName.sendKeys("OpenBanking");
@@ -48,7 +52,11 @@ public class PageObjectClass {
 		PostCode.sendKeys("34567");
 		Country.sendKeys("United States");
 		Mobile.sendKeys("123456789");
-		SubmitAccount.click();	
+		//SubmitAccount.click();
+		
+		
 		
 	}
+
+	
 }
