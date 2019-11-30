@@ -3,6 +3,7 @@ package com.mavenproject.SampleMavenProj;
 import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.util.List;
 
@@ -12,15 +13,16 @@ import org.testng.annotations.AfterMethod;
 
 public class RadioButton extends BaseTest3{
 	
- @BeforeMethod
-  public void beforeMethod() throws Exception
+ @BeforeMethod(groups= {"regression"})
+ @Parameters("browser")
+  public void beforeMethod(String browserType) throws Exception
  {		
 		init();		
-		launch("chromebrowser");		
+		launch(browserType);		
 		navigate("radiobuttonurl");		
  }
 	 
-  @Test
+  @Test(groups= {"regression"})
   public void radioButtonTest() 
   {
 	  List<WebElement> list = driver.findElements(By.tagName("a"));
@@ -34,7 +36,7 @@ public class RadioButton extends BaseTest3{
   }
  
 
-  @AfterMethod
+  @AfterMethod(groups= {"regression"})
   public void afterMethod() {
 	  closeBrowser();
   }

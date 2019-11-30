@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SanitySuite">
-  <test thread-count="5" name="SanityTest">
+<suite name="SanitySuite" parallel="tests">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.mavenproject.SampleMavenProj.AmzonUsingTestNg"/>
       <class name="com.mavenproject.SampleMavenProj.CheckBox"/>
@@ -9,4 +10,15 @@
       <class name="com.mavenproject.SampleMavenProj.RadioButton"/>
     </classes>
   </test> <!-- SanityTest -->
+  
+   <test thread-count="5" name="FireFoxTest">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.mavenproject.SampleMavenProj.AmzonUsingTestNg"/>
+      <class name="com.mavenproject.SampleMavenProj.CheckBox"/>
+      <class name="com.mavenproject.SampleMavenProj.linktext"/>
+      <class name="com.mavenproject.SampleMavenProj.RadioButton"/>
+    </classes>
+  </test> <!-- SanityTest -->
+  
 </suite> <!-- SanitySuite -->

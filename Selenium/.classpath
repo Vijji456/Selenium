@@ -14,5 +14,10 @@
 	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/Selenium Jar Files/client-combined-3.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/poi-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/poi-ooxml-schemas-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VIJAYALAKSHMINAKKA/Desktop/Selenium/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -24,6 +24,8 @@ public class FacebookAssignment {
 	select1.selectByVisibleText("Jan");
 	Select select2=new Select(driver.findElement(By.id("year")));	
 	select2.selectByValue("1991");
+	
+	
 		
 	
 	

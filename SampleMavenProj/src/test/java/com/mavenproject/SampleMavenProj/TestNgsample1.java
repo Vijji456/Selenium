@@ -11,17 +11,17 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class TestNgsample1 {
-  @Test(priority=1)
+  @Test
   public void f() {
 	  System.out.println("f method");
   }
   
-  @Test(priority=3,enabled=false)
+  @Test
   public void a() {
 	  System.out.println("a method");
   }
   
-  @Test(priority=2)
+  @Test
   public void b() {
 	  System.out.println("b method");
   }

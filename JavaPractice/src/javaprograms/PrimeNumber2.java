@@ -1,12 +1,13 @@
 package javaprograms;
 import java.util.*;
-class PrimeNumbers2
+class PrimeNumber2
 {
    public static void main (String[] args)
    {		
       Scanner scanner = new Scanner(System.in);
       int i =0;
-      int num =0;
+      int num =0; 
+      int flag=0;
       //Empty String
       String  primeNumbers= "";
       System.out.println("Enter the value of n:");
@@ -26,9 +27,11 @@ class PrimeNumbers2
 	 {
 	    //Appended the Prime number to the String
 	    primeNumbers = primeNumbers + i + " ";
+	    flag=flag+1;
 	 }	
       }	
       System.out.println("Prime numbers from 1 to n are :");
       System.out.println(primeNumbers);
+      System.out.println( "Total prime number are "+flag);
    }
 }

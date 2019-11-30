@@ -5,18 +5,20 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
 public class AmzonUsingTestNg extends BaseTest3 {
-  @BeforeMethod
-  public void startProcess() throws Exception
+  @BeforeMethod(groups= {"regression","smoke"})
+  @Parameters("browser")
+  public void startProcess(String browserType) throws Exception
   {
 	    test=report.startTest("TC04");		
 		
 		init();
 		test.log(LogStatus.INFO, "the configiration file got loaded..................");
 		
-		launch("chromebrowser");
+		launch(browserType);
 		test.log(LogStatus.INFO, "The browser is launched: "+dataload.getProperty("chromebrowser"));
 		
 		navigate("amazonurl");
@@ -24,7 +26,7 @@ public class AmzonUsingTestNg extends BaseTest3 {
 
   }
   
-  @Test
+  @Test(groups= {"regression","smoke"})
   public void amazon()
   {
 	    selectDropDown("amzondropdown_id","Books");
@@ -38,7 +40,7 @@ public class AmzonUsingTestNg extends BaseTest3 {
 		
   }
   
-  @AfterMethod
+  @AfterMethod(groups= {"regression","smoke"})
   public void endProcess()
   {
 	 driver.close();

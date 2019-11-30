@@ -21,7 +21,7 @@ public class PageObjectClassExmp extends BaseTest3{
   public void Registraion() throws InterruptedException {
 	 page=new PageObjectClass(driver);
 	 page.customerRegistration();
-	 //closeBrowser();
+	 closeBrowser();
   }
 
 }

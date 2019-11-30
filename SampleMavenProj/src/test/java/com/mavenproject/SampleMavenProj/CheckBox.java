@@ -2,6 +2,7 @@ package com.mavenproject.SampleMavenProj;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.util.List;
 
@@ -10,15 +11,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 
 public class CheckBox  extends BaseTest3{ 
- @BeforeMethod
- public void beforeMethod() throws Exception 
+ @BeforeMethod(groups= {"sanity"})
+ @Parameters("browser")
+ public void beforeMethod(String browserType) throws Exception 
  {
 		init();		
-		launch("chromebrowser");		
+		launch(browserType);		
 		navigate("checkboxurl");	
  }
 
-  @Test
+  @Test(groups= {"sanity"})
   public void checkBoxTest() {
 	  List<WebElement> list = driver.findElements(By.tagName("a"));
 	  for(int i=0;i<list.size();i++)
@@ -32,7 +34,7 @@ public class CheckBox  extends BaseTest3{
   }
   
 
-  @AfterMethod
+  @AfterMethod(groups= {"sanity"})
   public void afterMethod() {
 	  closeBrowser();
   }

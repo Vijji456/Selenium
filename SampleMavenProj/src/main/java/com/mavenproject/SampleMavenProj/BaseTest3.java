@@ -47,7 +47,7 @@ public class BaseTest3 {
 		System.out.println("log 4j file is configured..........");
 	}
 	public static void launch(String browser) {
-		if(dataload.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, System.getProperty("user.dir")+"//drivers//chromedriver.exe");
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\IBM_ADMIN\\Desktop\\Selenium\\Drivers\\chromedriver_win32\\chromedriver.exe");
@@ -56,7 +56,7 @@ public class BaseTest3 {
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 		}
-		else if(dataload.getProperty(browser).equals("firefox")) {
+		else if(browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//drivers//geckodriver.exe");
 			driver=new FirefoxDriver();
 			
