@@ -2,12 +2,15 @@ package com.mavenproject.SampleMavenProj.PageObjectModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.mavenproject.SampleMavenProj.BaseTest3;
 
 public class PageObjectClass extends BaseTest3{
+	
+	//@CacheLookup
 
 	@FindBy(linkText="Sign in")WebElement SignIn;
 	@FindBy(id="email_create")WebElement emailCreate;
