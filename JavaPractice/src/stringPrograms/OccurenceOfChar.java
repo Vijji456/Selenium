@@ -5,7 +5,7 @@ public class OccurenceOfChar {
 	public static void main(String[] args) {
 		String str="beginersbook";
 		char[] c=str.toCharArray();
-		int i,j,counter=0;
+		int i,j,counter=0; 
 		int len=str.length();
 		for(i=0;i<len;i++) {
 			counter=0;

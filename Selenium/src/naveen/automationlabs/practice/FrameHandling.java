@@ -22,16 +22,16 @@ public class FrameHandling {
 		//driver.findElement(By.cssSelector("#loginForm > div > div > input")).click();
 		
 		
-		/*
-		 * driver.switchTo().frame("mainpanel"); 
-		 * Thread.sleep(3000);
-		 * driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
-		 */
+		
+		  driver.switchTo().frame("mainpanel"); 
+		  Thread.sleep(3000);
+		  driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
+		 
 	
 		 
 		
 		
-		  driver.switchTo().frame("leftpanel");
+	/*	  driver.switchTo().frame("leftpanel");
 		  Thread.sleep(3000);
 		 // driver.findElement(By.xpath("//a[contains(text(),'Alerts')]")).click();
 		  driver.findElement(By.linkText("Alerts")).click();
@@ -40,7 +40,7 @@ public class FrameHandling {
 		
 		
 		//driver.quit();
-		
+*/		
 		
 			
 	}
