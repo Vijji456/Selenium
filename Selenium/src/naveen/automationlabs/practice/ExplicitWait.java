@@ -30,6 +30,7 @@ public class ExplicitWait {
 	{
 	new WebDriverWait(driver,timeout).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(locator));
 	locator.click();
+	
 	}
 	
 
